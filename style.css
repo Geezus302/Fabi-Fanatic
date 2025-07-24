@@ -1,0 +1,59 @@
+
+body {
+  font-family: 'Georgia', serif;
+  background-image: url('https://www.transparenttextures.com/patterns/heart-wall.png');
+  background-color: #ffd6e8;
+  background-repeat: repeat;
+  background-size: 200px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+.section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section.visible {
+  display: flex;
+}
+button {
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff8fb1;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e5739c;
+}
+img {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+.cheesy {
+  margin-top: 20px;
+  color: #d1416d;
+  font-style: italic;
+}
+.exit {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
